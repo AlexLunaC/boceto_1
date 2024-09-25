@@ -116,14 +116,26 @@
                     <view key="view" contentMode="scaleToFill" id="Psq-Ba-Tdl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zw-SQ-pQw">
+                                <rect key="frame" x="151" y="144" width="134" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aw0-At-qu8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Zw-SQ-pQw" firstAttribute="leading" secondItem="aw0-At-qu8" secondAttribute="leading" constant="151" id="CWV-FU-EjX"/>
+                            <constraint firstItem="1Zw-SQ-pQw" firstAttribute="top" secondItem="aw0-At-qu8" secondAttribute="top" constant="144" id="gA7-T0-w2a"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zjD-vB-7Qf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9E-dv-a2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="878"/>
+            <point key="canvasLocation" x="101.5267175572519" y="877.46478873239437"/>
         </scene>
         <!--Controlador Pantalla Cita-->
         <scene sceneID="wKC-gU-1QW">
