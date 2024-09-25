@@ -16,4 +16,5 @@ struct Cita{
         nombre = quien_lo_dijo
         texto = que_dijo
     }
+    //hola soy tu
 }
