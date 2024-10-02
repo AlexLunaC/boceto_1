@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0208F52CADAA0B002A656D /* ControladorGeneradorCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0208F42CADAA0B002A656D /* ControladorGeneradorCitas.swift */; };
 		FB9F0FD62C9DCB8800EF12E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0FD52C9DCB8800EF12E6 /* AppDelegate.swift */; };
 		FB9F0FD82C9DCB8800EF12E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0FD72C9DCB8800EF12E6 /* SceneDelegate.swift */; };
 		FB9F0FDA2C9DCB8800EF12E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9F0FD92C9DCB8800EF12E6 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0208F42CADAA0B002A656D /* ControladorGeneradorCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorGeneradorCitas.swift; sourceTree = "<group>"; };
 		FB9F0FD22C9DCB8800EF12E6 /* boceto_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9F0FD52C9DCB8800EF12E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB9F0FD72C9DCB8800EF12E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFA1D0F2CA1C25B00FAB27B /* ControladorPantallaCita.swift */,
+				FB0208F42CADAA0B002A656D /* ControladorGeneradorCitas.swift */,
 			);
 			path = controlador_de_vistas;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0208F52CADAA0B002A656D /* ControladorGeneradorCitas.swift in Sources */,
 				FB9F0FDA2C9DCB8800EF12E6 /* ViewController.swift in Sources */,
 				FB9F0FD62C9DCB8800EF12E6 /* AppDelegate.swift in Sources */,
 				FBFA1D102CA1C25B00FAB27B /* ControladorPantallaCita.swift in Sources */,
