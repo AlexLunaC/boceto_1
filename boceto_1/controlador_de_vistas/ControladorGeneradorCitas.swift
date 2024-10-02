@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 
-class ControladorGeneradorCitas: UIViewController{
+class ControladorPantallaAgregarCitas: UIViewController{
     
     
     override func viewDidLoad() {
