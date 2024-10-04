@@ -34,10 +34,15 @@ class ViewController: UIViewController {
         
     }*/
     
-    @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue){
-        if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCitas{
-            citas_disponibles.agregar_cita(<#T##que_dijo: String##String#>, quien_lo_dijo: <#T##String#>)
+    @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue) {
+        if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCitas {
+            if let citaCreada = pantalla_agregar_citas.cita_creada {
+                citas_disponibles.agregar_cita(citaCreada)
+            } else {
+                print("aqui no hay nada mi pa")
+            }
         }
+    
         
         //let pantalla_citas = segue.source as? ControladorPantallaCita
         //print(pantalla_citas?.cita_actual.texto)
