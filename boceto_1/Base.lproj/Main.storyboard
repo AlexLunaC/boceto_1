@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Agregar Citas-->
         <scene sceneID="o0F-GZ-Ing">
             <objects>
-                <viewController id="EyA-RZ-h4D" sceneMemberID="viewController">
+                <viewController id="EyA-RZ-h4D" customClass="ControladorPantallaAgregarCitas" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Psq-Ba-Tdl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,8 +137,8 @@
                                     <segue destination="cd6-Ua-XkN" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="Fgk-3k-l82"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pS9-X5-MVf">
-                                <rect key="frame" x="36" y="137.66666666666663" width="321" height="567"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pS9-X5-MVf">
+                                <rect key="frame" x="36" y="138" width="321" height="351"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRZ-ma-wrA">
                                         <rect key="frame" x="0.0" y="28" width="321" height="34"/>
@@ -152,7 +152,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="321" id="5eb-Gm-7dS"/>
                                     <constraint firstAttribute="height" constant="567" id="5po-wz-guS"/>
@@ -161,6 +161,14 @@
                                     <constraint firstItem="mRZ-ma-wrA" firstAttribute="top" secondItem="pS9-X5-MVf" secondAttribute="top" constant="8" id="uJQ-fX-8yi"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTu-i3-dL8">
+                                <rect key="frame" x="132" y="570" width="128" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Agregar Cita"/>
+                                <connections>
+                                    <action selector="agregar_cita_nueva:" destination="EyA-RZ-h4D" eventType="touchUpInside" id="2LT-jD-tPv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aw0-At-qu8"/>
                         <color key="backgroundColor" red="1" green="0.7612678397" blue="0.90825528300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -169,9 +177,15 @@
                             <constraint firstItem="Kkg-EE-HzK" firstAttribute="leading" secondItem="aw0-At-qu8" secondAttribute="leading" constant="42" id="JYm-JE-v8k"/>
                             <constraint firstItem="Kkg-EE-HzK" firstAttribute="top" secondItem="aw0-At-qu8" secondAttribute="top" constant="77" id="Ocj-yU-EPr"/>
                             <constraint firstItem="pS9-X5-MVf" firstAttribute="centerX" secondItem="aw0-At-qu8" secondAttribute="centerX" id="aQU-2l-Oxx"/>
+                            <constraint firstItem="FTu-i3-dL8" firstAttribute="top" secondItem="pS9-X5-MVf" secondAttribute="bottom" constant="62" id="f3W-c5-iyJ"/>
+                            <constraint firstItem="FTu-i3-dL8" firstAttribute="centerX" secondItem="aw0-At-qu8" secondAttribute="centerX" id="hzw-C2-C5S"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zjD-vB-7Qf"/>
+                    <connections>
+                        <outlet property="que_es_lo_que_dijo" destination="jrk-G9-Zwk" id="7hQ-4Y-4gO"/>
+                        <outlet property="quien_lo_dijo_view" destination="mRZ-ma-wrA" id="OwI-99-0Qf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9E-dv-a2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -283,10 +297,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
