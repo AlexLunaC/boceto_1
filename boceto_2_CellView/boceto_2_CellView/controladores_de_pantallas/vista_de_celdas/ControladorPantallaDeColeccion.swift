@@ -38,6 +38,8 @@ class ControladorPantallaDeColeccion: UICollectionViewController {
     func prueba(){
         
     }
+    
+    //vamo a ver si guarda los cambios
 
     /*
     // MARK: - Navigation
