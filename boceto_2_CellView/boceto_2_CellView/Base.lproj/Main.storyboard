@@ -32,21 +32,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8JS-Ml-Il7">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="216" height="174"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="celda_pantalla_principal" id="uau-uD-64K" customClass="VistaDeCelda" customModule="boceto_2_CellView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                <rect key="frame" x="88.666666666666671" y="0.0" width="216" height="174"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8P5-q1-mbR">
-                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="216" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-77-HrU">
-                                            <rect key="frame" x="42" y="54" width="42" height="21"/>
+                                            <rect key="frame" x="87" y="92" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pi0-eb-cOB">
+                                            <rect key="frame" x="87" y="22" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -54,12 +60,16 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="PX7-77-HrU" firstAttribute="centerX" secondItem="8P5-q1-mbR" secondAttribute="centerX" id="MSd-Yv-txj"/>
+                                        <constraint firstItem="Pi0-eb-cOB" firstAttribute="top" secondItem="8P5-q1-mbR" secondAttribute="top" constant="22" id="TUJ-FW-7u8"/>
+                                        <constraint firstItem="Pi0-eb-cOB" firstAttribute="leading" secondItem="8P5-q1-mbR" secondAttribute="leading" constant="87" id="gYN-bN-knv"/>
                                         <constraint firstItem="PX7-77-HrU" firstAttribute="centerY" secondItem="8P5-q1-mbR" secondAttribute="centerY" id="kyc-9N-Z1g"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.1264793417" green="0.77201474339999998" blue="0.84132434219999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="customSize" width="216" height="174"/>
                                 <connections>
-                                    <outlet property="etiqueta" destination="PX7-77-HrU" id="3In-Yw-Qga"/>
+                                    <outlet property="cuerpo" destination="PX7-77-HrU" id="Laj-fB-49e"/>
+                                    <outlet property="etiqueta" destination="Pi0-eb-cOB" id="PAz-nH-uvC"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -72,7 +82,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cpk-YZ-LMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541" y="-44"/>
+            <point key="canvasLocation" x="539.69465648854964" y="-44.366197183098592"/>
         </scene>
     </scenes>
 </document>
