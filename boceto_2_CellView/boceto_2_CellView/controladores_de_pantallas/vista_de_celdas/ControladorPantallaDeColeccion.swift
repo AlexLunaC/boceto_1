@@ -15,7 +15,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     
     private let identificador_de_celda = "celda_pantalla_principal"
     
-    let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
+    let provedor_Publicaciones = ProveedorDePublicaciones.autoreferencia
     
     @IBOutlet weak var outlet_a_la_vista: UICollectionView!
     

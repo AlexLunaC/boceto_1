@@ -18,6 +18,9 @@
 		FB408F8F2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F8E2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift */; };
 		FB408F9E2CB4375F00739678 /* ControladorPantallaDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F9D2CB4375F00739678 /* ControladorPantallaDeColeccion.swift */; };
 		FB408FA02CB43D3300739678 /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */; };
+		FB81B9862CBD6EC0006DB7F4 /* ControladorPantallaDelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81B9852CBD6EC0006DB7F4 /* ControladorPantallaDelPost.swift */; };
+		FB81B9892CBD6F83006DB7F4 /* provedor_Publicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81B9882CBD6F83006DB7F4 /* provedor_Publicaciones.swift */; };
+		FB81B98B2CBD73D1006DB7F4 /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81B98A2CBD73D1006DB7F4 /* mod_navegador_principal.swift */; };
 		FBB3589A2CB9851000C938DE /* EstiloCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB358992CB9851000C938DE /* EstiloCellViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		FB408F8E2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB408F9D2CB4375F00739678 /* ControladorPantallaDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDeColeccion.swift; sourceTree = "<group>"; };
 		FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
+		FB81B9852CBD6EC0006DB7F4 /* ControladorPantallaDelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDelPost.swift; sourceTree = "<group>"; };
+		FB81B9882CBD6F83006DB7F4 /* provedor_Publicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = provedor_Publicaciones.swift; sourceTree = "<group>"; };
+		FB81B98A2CBD73D1006DB7F4 /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
 		FBB358992CB9851000C938DE /* EstiloCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +119,7 @@
 		FB408F6A2CB4339B00739678 /* boceto_2_CellView */ = {
 			isa = PBXGroup;
 			children = (
+				FB81B9872CBD6F5A006DB7F4 /* Proveedor */,
 				FBB358982CB984C400C938DE /* estilos */,
 				FB408F9B2CB4368000739678 /* controladores_de_pantallas */,
 				FB2F7D792CB6D98500A453FA /* modelos */,
@@ -156,14 +163,24 @@
 			children = (
 				FB408F9D2CB4375F00739678 /* ControladorPantallaDeColeccion.swift */,
 				FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */,
+				FB81B9852CBD6EC0006DB7F4 /* ControladorPantallaDelPost.swift */,
 			);
 			path = vista_de_celdas;
+			sourceTree = "<group>";
+		};
+		FB81B9872CBD6F5A006DB7F4 /* Proveedor */ = {
+			isa = PBXGroup;
+			children = (
+				FB81B9882CBD6F83006DB7F4 /* provedor_Publicaciones.swift */,
+			);
+			path = Proveedor;
 			sourceTree = "<group>";
 		};
 		FBB358982CB984C400C938DE /* estilos */ = {
 			isa = PBXGroup;
 			children = (
 				FBB358992CB9851000C938DE /* EstiloCellViewController.swift */,
+				FB81B98A2CBD73D1006DB7F4 /* mod_navegador_principal.swift */,
 			);
 			path = estilos;
 			sourceTree = "<group>";
@@ -299,11 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB81B9892CBD6F83006DB7F4 /* provedor_Publicaciones.swift in Sources */,
 				FB408F9E2CB4375F00739678 /* ControladorPantallaDeColeccion.swift in Sources */,
 				FB408F6C2CB4339B00739678 /* AppDelegate.swift in Sources */,
 				FBB3589A2CB9851000C938DE /* EstiloCellViewController.swift in Sources */,
 				FB2F7D7D2CB6D9C700A453FA /* posts.swift in Sources */,
 				FB408FA02CB43D3300739678 /* VistaDeCelda.swift in Sources */,
+				FB81B9862CBD6EC0006DB7F4 /* ControladorPantallaDelPost.swift in Sources */,
+				FB81B98B2CBD73D1006DB7F4 /* mod_navegador_principal.swift in Sources */,
 				FB408F6E2CB4339B00739678 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
