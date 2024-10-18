@@ -25,14 +25,13 @@ class ProveedorDePublicaciones{
     
     func obtener_publicaicones(que_hacer_al_recibir: @escaping ([Publicacion]) -> Void) {
     // func obtener_publicaicones() async throws -> [Publicacion] {
-        let ubicacion = URL(string: url_de_publicaciones)!
+        let ubicacion = URL(string: url_de_publicaciones)post/\()!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
                     if let publicaciones_recibidas = datos{
                         let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Publicacion].self, from: publicaciones_recibidas)
                         
-                        self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
-                        que_hacer_al_recibir(prueba_de_interpretacion_de_datos ?? [])
+                        que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
                     }
                     else {
                         print(respuesta)

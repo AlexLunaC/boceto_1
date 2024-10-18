@@ -100,9 +100,10 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
         let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
         
-        self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
+        //pantalla_de_publicacion.id_publicacion = indexPath.item
+        pantalla_de_publicacion.id_publicacion = self.lista_de_publicaciones[indexPath.item].id
         
-        print(self.navigationController)
+        self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
         
     }
     
