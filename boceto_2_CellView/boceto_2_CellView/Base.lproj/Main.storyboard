@@ -86,22 +86,16 @@
             </objects>
             <point key="canvasLocation" x="539.69465648854964" y="-44.366197183098592"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Del Post-->
         <scene sceneID="XkD-tq-WYu">
             <objects>
-                <viewController id="mnw-jp-y8L" sceneMemberID="viewController">
+                <viewController id="mnw-jp-y8L" customClass="ControladorPantallaDelPost" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="doU-qw-ewL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nombre_de_usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJq-OI-ndf">
-                                <rect key="frame" x="16" y="118" width="174" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="81P-sJ-Cyl">
-                                <rect key="frame" x="16" y="217" width="361" height="340"/>
+                                <rect key="frame" x="16" y="228" width="361" height="340"/>
                                 <color key="backgroundColor" red="1" green="0.60527922779999999" blue="0.68130619719999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="HbL-y2-a7i"/>
@@ -127,13 +121,19 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo de publicacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWz-1k-BMP">
-                                <rect key="frame" x="63" y="74" width="267" height="36"/>
+                                <rect key="frame" x="63" y="74" width="267" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Texto del cuerpo de la publicacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qn-g8-033">
-                                <rect key="frame" x="16" y="178" width="260" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto del cuerpo de la publicacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qn-g8-033">
+                                <rect key="frame" x="16" y="189" width="260" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre_de_usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJq-OI-ndf">
+                                <rect key="frame" x="28" y="118" width="174" height="52"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -146,11 +146,20 @@
                             <constraint firstItem="81P-sJ-Cyl" firstAttribute="top" secondItem="TWz-1k-BMP" secondAttribute="bottom" constant="107" id="5Tl-P1-z7q"/>
                             <constraint firstItem="TWz-1k-BMP" firstAttribute="leading" secondItem="y5a-FQ-xd7" secondAttribute="leading" constant="63" id="9fX-NJ-e28"/>
                             <constraint firstItem="TWz-1k-BMP" firstAttribute="top" secondItem="y5a-FQ-xd7" secondAttribute="top" constant="15" id="Btt-WK-Zdy"/>
+                            <constraint firstItem="pJq-OI-ndf" firstAttribute="top" secondItem="y5a-FQ-xd7" secondAttribute="top" constant="59" id="EyD-z5-Zw1"/>
                             <constraint firstItem="81P-sJ-Cyl" firstAttribute="leading" secondItem="y5a-FQ-xd7" secondAttribute="leading" constant="16" id="KPV-Lv-g5Q"/>
+                            <constraint firstItem="pJq-OI-ndf" firstAttribute="leading" secondItem="y5a-FQ-xd7" secondAttribute="leading" constant="28" id="VGj-Dk-GA0"/>
+                            <constraint firstItem="1qn-g8-033" firstAttribute="top" secondItem="TWz-1k-BMP" secondAttribute="bottom" constant="68" id="crj-9B-7NV"/>
                             <constraint firstItem="1qn-g8-033" firstAttribute="top" secondItem="pJq-OI-ndf" secondAttribute="bottom" constant="8" symbolic="YES" id="oqZ-gB-0ug"/>
                             <constraint firstItem="1qn-g8-033" firstAttribute="leading" secondItem="y5a-FQ-xd7" secondAttribute="leading" constant="16" id="t6m-1k-HxZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cuerpo_de_publicacion" destination="1qn-g8-033" id="oyR-8O-nO7"/>
+                        <outlet property="nombre_de_usuario" destination="pJq-OI-ndf" id="FVO-mF-XKL"/>
+                        <outlet property="seccion_comentarios" destination="81P-sJ-Cyl" id="t4D-x9-jRg"/>
+                        <outlet property="titulo_de_publicacion" destination="TWz-1k-BMP" id="kCw-fV-qfV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q05-NQ-9v7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
