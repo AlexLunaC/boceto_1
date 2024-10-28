@@ -8,7 +8,7 @@
 import UIKit
 
 class VistaDeCelda: UICollectionViewCell {
-    @IBOutlet weak var etiqueta: UILabel!
+    @IBOutlet weak var titulo: UILabel!
         
     @IBOutlet weak var cuerpo: UILabel!
 }
