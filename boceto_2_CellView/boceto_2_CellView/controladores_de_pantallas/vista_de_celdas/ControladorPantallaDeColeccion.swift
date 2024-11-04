@@ -69,7 +69,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
     
     
@@ -107,89 +107,4 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
     }
     
-    // MARK: UICollectionViewDelegate
-    
-    /*extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLayout{
-     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-     
-     return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-     }
-     // Method 2
-     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-     
-     return 5
-     }
-     // Method 3
-     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-     
-     return 5
-     }
-     //Method 4
-     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-     
-     let collectionViewWidth = self.collectionView.frame.width
-     let collectionViewHeight =  self.collectionView.frame.height
-     
-     let cellWidth = (collectionViewWidth) / 1.1
-     let cellHeight = cellWidth * 0.5
-     
-     return CGSize(width: cellWidth , height: cellHeight)
-     
-     }
-     
-     override func viewWillLayoutSubviews() {
-     print("REPRENDER ESTAS mmadas")
-     
-     }
-     
-     override func viewWillAppear(_ animated: Bool) {
-     (self.navigationController as? mod_navegador_principal)?.activar_navigation_bar(actviar: false)
-     
-     }
-     }+/
-     
-     
-     /*
-      class ControladorPantallaGRIDCollectionView: UICollectionViewDelegate {
-      private let itemsPerRow: CGFloat = 3
-      private let minimumItemSpacing: CGFloat = 8
-      private let sectionInsets: UIEdgeInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
-      
-      // MARK: - UICollectionViewDelegateFlowLayout
-      func collectionView(_ collectionView: UICollectionView,
-      layout collectionViewLayout: UICollectionViewLayout,
-      sizeForItemAt indexPath: IndexPath) -> CGSize {
-      let itemSize: CGSize
-      if indexPath.item % 4 == 0 {
-      let itemWidth = collectionView.bounds.width - (sectionInsets.left + sectionInsets.right)
-      itemSize = CGSize(width: itemWidth, height: 112)
-      } else {
-      let paddingSpace = sectionInsets.left + sectionInsets.right + minimumItemSpacing * (itemsPerRow - 1)
-      let availableWidth = collectionView.bounds.width - paddingSpace
-      let widthPerItem = availableWidth / itemsPerRow
-      itemSize = CGSize(width: widthPerItem, height: widthPerItem)
-      }
-      return itemSize
-      }
-      
-      func collectionView(_ collectionView: UICollectionView,
-      layout collectionViewLayout: UICollectionViewLayout,
-      insetForSectionAt section: Int) -> UIEdgeInsets {
-      return sectionInsets
-      }
-      
-      func collectionView(_ collectionView: UICollectionView,
-      layout collectionViewLayout: UICollectionViewLayout,
-      minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-      return 20
-      }
-      
-      func collectionView(_ collectionView: UICollectionView,
-      layout collectionViewLayout: UICollectionViewLayout,
-      minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-      return minimumItemSpacing
-      }
-      }
-      */
-     */
 }
